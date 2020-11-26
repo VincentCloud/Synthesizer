@@ -1,0 +1,2 @@
+/Users/vincenthuang/Library/Audio/Plug-Ins/VST3/Synthesizer.vst3/Contents/MacOS/Synthesizer
+/Users/vincenthuang/Library/Audio/Plug-Ins/VST3/Synthesizer.vst3/Contents/Info.plist

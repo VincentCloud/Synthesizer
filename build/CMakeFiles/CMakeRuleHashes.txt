@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+49d164792f00f203190f1c6c06f237d1 Synthesizer.rsrc

@@ -1,0 +1,10 @@
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/install/local.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/install/strip.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/install.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/rebuild_cache.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/list_install_components.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/Synthesizer_StandalonePlugin.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/Synthesizer_Shared_Code.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/Synthesizer_VST3.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/edit_cache.dir
+/Users/vincenthuang/JUCEProjects/Synthesizer/build/CMakeFiles/Synthesizer_AU.dir

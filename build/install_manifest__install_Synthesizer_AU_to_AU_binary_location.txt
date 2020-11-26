@@ -1,0 +1,2 @@
+/Users/vincenthuang/Library/Audio/Plug-Ins/Components/Synthesizer.component/Contents/MacOS/Synthesizer
+/Users/vincenthuang/Library/Audio/Plug-Ins/Components/Synthesizer.component/Contents/Info.plist
