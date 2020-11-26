@@ -55,12 +55,16 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+
     float attackTime; // set it to pass the attack values to other components
-    AudioProcessorValueTreeState tree;
+    float releaseTime;
+    AudioProcessorValueTreeState apvts;
 
 private:
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SynthesizerAudioProcessor)
+    juce::AudioProcessorValueTreeState::ParameterLayout createParameters();
+
     juce::Synthesiser mySynth;
     SynthVoice *myVoice;
 

@@ -20,15 +20,9 @@ SynthesizerAudioProcessor::SynthesizerAudioProcessor()
                       #endif
                        .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
                      #endif
-                       ),
-                       attackTime(0.1f),
-                       tree (*this, nullptr)
+                       ), apvts(*this, nullptr, "Parameters", createParameters())
 #endif
 {
-    NormalisableRange<float> attackParam (0.1f, 5000.0f);
-
-    tree.createAndAddParameter("attack", "Attack", "Attack", attackParam, 0.1f, nullptr, nullptr);
-    tree.state = ValueTree("attack");
     /*
      * create 5 voices
      */
@@ -154,7 +148,8 @@ void SynthesizerAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
     for (int i = 0; i < mySynth.getNumVoices(); i++) {
         myVoice = dynamic_cast<SynthVoice *>(mySynth.getVoice((i)));
         if (myVoice) {
-            myVoice->getParam((float*)(tree.getRawParameterValue("attack")));
+            myVoice->getParam((float*)(apvts.getRawParameterValue("ATTACK")),
+                              (float*)(apvts.getRawParameterValue("RELEASE")));
         }
     }
 
@@ -195,4 +190,11 @@ void SynthesizerAudioProcessor::setStateInformation (const void* data, int sizeI
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new SynthesizerAudioProcessor();
+}
+
+juce::AudioProcessorValueTreeState::ParameterLayout SynthesizerAudioProcessor::createParameters(){
+    std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("ATTACK", "Attack", 0.1f, 5000.0f, 0.1f));
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("RELEASE", "Release", 0.1f, 5000.0f, 0.1f));
+    return { params.begin(), params.end() };
 }

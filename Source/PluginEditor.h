@@ -30,8 +30,10 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     SynthesizerAudioProcessor& audioProcessor;
-    Slider attackSlider;
-    ScopedPointer<AudioProcessorValueTreeState::SliderAttachment> sliderTree;
+    juce::Slider attackSlider;
+    juce::Slider releaseSlider;
+    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> attackSliderAttachment;
+    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> releaseSliderAttachment;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SynthesizerAudioProcessorEditor)
 };

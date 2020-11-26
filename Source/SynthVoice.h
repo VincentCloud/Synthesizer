@@ -16,18 +16,19 @@
 
 class SynthVoice : public juce::SynthesiserVoice {
 public:
-    bool canPlaySound ( juce::SynthesiserSound * sound) {
+    bool canPlaySound ( juce::SynthesiserSound * sound) override {
         // return whether it can play a sound
         // use a dynamic cast
         return dynamic_cast<SynthSound *>(sound) != nullptr;
     }
 
-    void getParam (float * attack) {
+    void getParam (float * attack, float * release) {
         // set the attack value
         env1.setAttack(double(*attack));
+        env1.setRelease(double(*release));
     }
 
-    void startNote ( int midiNoteNumber, float velocity, juce::SynthesiserSound * sound, int currentPitch ) {
+    void startNote ( int midiNoteNumber, float velocity, juce::SynthesiserSound * sound, int currentPitch ) override {
         // when a key is hit on the keyboard, what's gonna happen
         env1.trigger = 1; // whether the env is triggered
         level = velocity;
@@ -35,7 +36,7 @@ public:
         std::cout << midiNoteNumber << std::endl;
     }
 
-    void stopNote ( float velocity, bool allowTailOff ) {
+    void stopNote ( float velocity, bool allowTailOff ) override {
         // clear the note after we stop playing
         env1.trigger = 0;
         allowTailOff = true;
@@ -44,18 +45,17 @@ public:
             clearCurrentNote();
     }
 
-    void pitchWheelMoved ( int newPitchWheelValue ) {
+    void pitchWheelMoved ( int newPitchWheelValue ) override {
 
     }
 
-    void controllerMoved (int controllerNumber, int newControllerValue ) {
+    void controllerMoved (int controllerNumber, int newControllerValue ) override {
 
     }
 
-    void renderNextBlock ( juce::AudioBuffer<float> &outputBuffer, int startSample, int numSamples ) {
+    void renderNextBlock ( juce::AudioBuffer<float> &outputBuffer, int startSample, int numSamples ) override {
         env1.setDecay(500);
         env1.setSustain(0.8);
-        env1.setRelease(2000);
 
         for (int sample = 0; sample < numSamples; sample++) {
             double theWave = osc1.saw(frequency);
