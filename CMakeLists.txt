@@ -66,6 +66,8 @@ jucer_audio_plugin_settings(
 jucer_project_files("Synthesizer/Source"
 # Compile   Xcode     Binary    File
 #           Resource  Resource
+  x         .         .         "Source/Envelope.cpp"
+  .         .         .         "Source/Envelope.h"
   x         .         .         "Source/Oscillator.cpp"
   .         .         .         "Source/Oscillator.h"
 )
@@ -224,6 +226,11 @@ jucer_project_module(
   # JUCE_WEB_BROWSER
   # JUCE_USE_WIN_WEBVIEW2
   # JUCE_ENABLE_LIVE_CONSTANT_EDITOR
+)
+
+jucer_project_module(
+  juce_osc
+  PATH "${JUCE_MODULES_GLOBAL_PATH}"
 )
 
 jucer_export_target(

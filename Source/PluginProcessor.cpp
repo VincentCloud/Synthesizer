@@ -149,6 +149,8 @@ void SynthesizerAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
         myVoice = dynamic_cast<SynthVoice *>(mySynth.getVoice((i)));
         if (myVoice) {
             myVoice->getParam((float*)(apvts.getRawParameterValue("ATTACK")),
+                              (float*)(apvts.getRawParameterValue("DECAY")),
+                              (float*)(apvts.getRawParameterValue("SUSTAIN")),
                               (float*)(apvts.getRawParameterValue("RELEASE")));
 
             myVoice->getOscType((float *)apvts.getRawParameterValue("WAVETYPE"));
@@ -197,6 +199,8 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 juce::AudioProcessorValueTreeState::ParameterLayout SynthesizerAudioProcessor::createParameters(){
     std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
     params.push_back(std::make_unique<juce::AudioParameterFloat>("ATTACK", "Attack", 0.1f, 5000.0f, 0.1f));
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("DECAY", "Decay", 0.1f, 2000.0f, 0.1f));
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("SUSTAIN", "Sustain", 0.1f, 0.8f, 0.1f));
     params.push_back(std::make_unique<juce::AudioParameterFloat>("RELEASE", "Release", 0.1f, 5000.0f, 0.1f));
 
     params.push_back(std::make_unique<juce::AudioParameterFloat>("WAVETYPE", "WaveType", 0, 2, 0)); // the combox selection is 1-index, but the param is 0-index

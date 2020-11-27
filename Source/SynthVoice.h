@@ -22,9 +22,11 @@ public:
         return dynamic_cast<SynthSound *>(sound) != nullptr;
     }
 
-    void getParam (float * attack, float * release) {
+    void getParam (float * attack, float *decay, float *sustain, float * release) {
         // set the attack value
         env1.setAttack(double(*attack));
+        env1.setDecay(double(*decay));
+        env1.setSustain(double(*sustain));
         env1.setRelease(double(*release));
     }
 
@@ -72,8 +74,6 @@ public:
     }
 
     void renderNextBlock ( juce::AudioBuffer<float> &outputBuffer, int startSample, int numSamples ) override {
-        env1.setDecay(500);
-        env1.setSustain(0.8);
 
         for (int sample = 0; sample < numSamples; sample++) {
             double theSound = env1.adsr(setOscType(), env1.trigger) * level;

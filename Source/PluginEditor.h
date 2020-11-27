@@ -11,11 +11,12 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 #include "Oscillator.h"
+#include "Envelope.h"
 
 //==============================================================================
 /**
 */
-class SynthesizerAudioProcessorEditor  : public juce::AudioProcessorEditor, public Slider::Listener
+class SynthesizerAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
     SynthesizerAudioProcessorEditor (SynthesizerAudioProcessor&);
@@ -25,13 +26,13 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
-    void sliderValueChanged (Slider* slider) override;
 
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     SynthesizerAudioProcessor& audioProcessor;
     Oscillator oscGUI;
+    Envelope envGUI;
 
 //    juce::Slider attackSlider;
 //    juce::Slider releaseSlider;

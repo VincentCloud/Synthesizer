@@ -11,13 +11,14 @@
 
 //==============================================================================
 SynthesizerAudioProcessorEditor::SynthesizerAudioProcessorEditor (SynthesizerAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p), oscGUI(p)
+    : AudioProcessorEditor (&p), audioProcessor (p), oscGUI(p), envGUI(p)
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
     setSize (400, 200);
 
     addAndMakeVisible(&oscGUI);
+    addAndMakeVisible(&envGUI);
 
 //    attackSlider.setSliderStyle(Slider::SliderStyle::LinearVertical);
 //    attackSlider.setRange(0.1f, 5000.0f);
@@ -54,24 +55,18 @@ void SynthesizerAudioProcessorEditor::resized()
 {
     Rectangle<int> area = getLocalBounds();
 
-    const int componentWidth = 200;
-    const int componentHeight = 200;
+    const int oscComponentWidth = 150;
+    const int oscComponentHeight = 200;
 
-    oscGUI.setBounds(area.removeFromLeft(componentWidth).removeFromTop(componentHeight));
+    const int envComponentWidth = 250;
+    const int envComponentHeight = 200;
+
+    oscGUI.setBounds(area.removeFromLeft(oscComponentWidth).removeFromTop(oscComponentHeight));
+    envGUI.setBounds(area.removeFromLeft(envComponentWidth).removeFromTop(envComponentHeight));
 
 
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
 //    attackSlider.setBounds(10, 10, 40, 100);
 //    releaseSlider.setBounds(50, 10, 40, 100);
-}
-
-void SynthesizerAudioProcessorEditor::sliderValueChanged (Slider* slider) {
-//    if (slider == &attackSlider) {
-//        audioProcessor.attackTime = (float)attackSlider.getValue();
-//    }
-//
-//    if (slider == &releaseSlider) {
-//        audioProcessor.releaseTime = (float)releaseSlider.getValue();
-//    }
 }

@@ -1609,6 +1609,24 @@ add_library (SHARED_CODE STATIC
     "../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"
     "../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.mm"
     "../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCAddress.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCAddress.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCArgument.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCArgument.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCBundle.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCBundle.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCMessage.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCMessage.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCReceiver.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCReceiver.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCSender.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCSender.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTimeTag.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTimeTag.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTypes.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTypes.h"
+    "../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.h"
     "../../JuceLibraryCode/include_juce_audio_basics.mm"
     "../../JuceLibraryCode/include_juce_audio_devices.mm"
     "../../JuceLibraryCode/include_juce_audio_formats.mm"
@@ -1622,6 +1640,7 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/include_juce_graphics.mm"
     "../../JuceLibraryCode/include_juce_gui_basics.mm"
     "../../JuceLibraryCode/include_juce_gui_extra.mm"
+    "../../JuceLibraryCode/include_juce_osc.cpp"
     "../../JuceLibraryCode/JuceHeader.h"
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
@@ -3054,6 +3073,24 @@ set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_g
 set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCAddress.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCAddress.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCArgument.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCArgument.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCBundle.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCBundle.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCMessage.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCMessage.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCReceiver.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCReceiver.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCSender.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCSender.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTimeTag.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTimeTag.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTypes.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/osc/juce_OSCTypes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JuceHeader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JucePluginDefines.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 
@@ -3099,6 +3136,7 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3242,6 +3280,7 @@ target_compile_definitions (AU PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3414,6 +3453,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3543,6 +3583,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3681,6 +3722,7 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3824,6 +3866,7 @@ target_compile_definitions (AU PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -3995,6 +4038,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -4124,6 +4168,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_MODULE_AVAILABLE_juce_graphics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+    "JUCE_MODULE_AVAILABLE_juce_osc=1"
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
@@ -5709,6 +5754,24 @@ add_library (SHARED_CODE STATIC
     "../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"
     "../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.mm"
     "../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCAddress.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCAddress.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCArgument.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCArgument.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCBundle.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCBundle.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCMessage.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCMessage.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCReceiver.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCReceiver.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCSender.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCSender.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCTimeTag.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCTimeTag.h"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCTypes.cpp"
+    "../../../../JUCE/modules/juce_osc/osc/juce_OSCTypes.h"
+    "../../../../JUCE/modules/juce_osc/juce_osc.cpp"
+    "../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.h"
     "../../JuceLibraryCode/include_juce_audio_basics.cpp"
     "../../JuceLibraryCode/include_juce_audio_devices.cpp"
     "../../JuceLibraryCode/include_juce_audio_formats.cpp"
@@ -5721,6 +5784,7 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/include_juce_graphics.cpp"
     "../../JuceLibraryCode/include_juce_gui_basics.cpp"
     "../../JuceLibraryCode/include_juce_gui_extra.cpp"
+    "../../JuceLibraryCode/include_juce_osc.cpp"
     "../../JuceLibraryCode/JuceHeader.h"
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
@@ -7153,6 +7217,24 @@ set_source_files_properties ("../../../../JUCE/modules/juce_gui_extra/native/juc
 set_source_files_properties ("../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_gui_extra/juce_gui_extra.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCAddress.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCAddress.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCArgument.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCArgument.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCBundle.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCBundle.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCMessage.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCMessage.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCReceiver.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCReceiver.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCSender.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCSender.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCTimeTag.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCTimeTag.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCTypes.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/osc/juce_OSCTypes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../JUCE/modules/juce_osc/juce_osc.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_osc/juce_osc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JuceHeader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JucePluginDefines.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 
@@ -7217,6 +7299,7 @@ target_compile_definitions (VST3 PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
@@ -7321,6 +7404,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
@@ -7418,6 +7502,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
@@ -7546,6 +7631,7 @@ target_compile_definitions (VST3 PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
@@ -7649,6 +7735,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
@@ -7745,6 +7832,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     JUCE_MODULE_AVAILABLE_juce_graphics=1
     JUCE_MODULE_AVAILABLE_juce_gui_basics=1
     JUCE_MODULE_AVAILABLE_juce_gui_extra=1
+    JUCE_MODULE_AVAILABLE_juce_osc=1
     JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1
     JUCE_VST3_CAN_REPLACE_VST2=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
