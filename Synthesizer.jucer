@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="NoKr3Z" name="Synthesizer" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
-              pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn">
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              companyName="MUMT306" companyEmail="chenzhun.huang@mail.mcgill.ca"
+              displaySplashScreen="1">
   <MAINGROUP id="tniGhz" name="Synthesizer">
     <GROUP id="{22CE6CC2-0D74-D55A-45E1-2303C47562B3}" name="Source">
       <FILE id="mco7Uh" name="Envelope.cpp" compile="1" resource="0" file="Source/Envelope.cpp"/>

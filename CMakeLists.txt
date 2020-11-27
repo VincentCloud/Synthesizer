@@ -2,7 +2,7 @@
 
 cmake_minimum_required(VERSION 3.4)
 
-project("Synthesizer")
+project("OSCSynthesizer")
 
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../FRUT/prefix/FRUT/cmake")
@@ -24,12 +24,14 @@ jucer_project_begin(
 )
 
 jucer_project_settings(
-  PROJECT_NAME "Synthesizer"
+  PROJECT_NAME "OSCSynthesizer"
   PROJECT_VERSION "1.0.0"
+  COMPANY_NAME "MUMT306"
+  COMPANY_EMAIL "chenzhun.huang@mail.mcgill.ca"
   REPORT_JUCE_APP_USAGE ON # Required for closed source applications without an Indie or Pro JUCE license
   DISPLAY_THE_JUCE_SPLASH_SCREEN ON # Required for closed source applications without an Indie or Pro JUCE license
   PROJECT_TYPE "Audio Plug-in"
-  BUNDLE_IDENTIFIER "com.yourcompany.Synthesizer"
+  BUNDLE_IDENTIFIER "com.MUMT306.OSCSynthesizer"
   CXX_LANGUAGE_STANDARD "C++14"
 )
 
@@ -42,14 +44,14 @@ jucer_audio_plugin_settings(
     "Plugin is a Synth"
     "Plugin MIDI Input"
     "Plugin MIDI Output"
-  PLUGIN_NAME "Synthesizer"
-  PLUGIN_DESCRIPTION "Synthesizer"
-  PLUGIN_MANUFACTURER "yourcompany"
+  PLUGIN_NAME "OSCSynthesizer"
+  PLUGIN_DESCRIPTION "OSCSynthesizer"
+  PLUGIN_MANUFACTURER "MUMT306"
   PLUGIN_MANUFACTURER_CODE "Manu"
   PLUGIN_CODE "Nokr"
   # PLUGIN_CHANNEL_CONFIGURATIONS
-  PLUGIN_AAX_IDENTIFIER "com.yourcompany.Synthesizer"
-  PLUGIN_AU_EXPORT_PREFIX "SynthesizerAU"
+  PLUGIN_AAX_IDENTIFIER "com.MUMT306.OSCSynthesizer"
+  PLUGIN_AU_EXPORT_PREFIX "OSCSynthesizerAU"
   PLUGIN_AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
   PLUGIN_VST_NUM_MIDI_INPUTS "16"
   PLUGIN_VST_NUM_MIDI_OUTPUTS "16"
@@ -63,7 +65,7 @@ jucer_audio_plugin_settings(
   PLUGIN_VST_LEGACY_CATEGORY "kPlugCategSynth"
 )
 
-jucer_project_files("Synthesizer/Source"
+jucer_project_files("OSCSynthesizer/Source"
 # Compile   Xcode     Binary    File
 #           Resource  Resource
   x         .         .         "Source/Envelope.cpp"
@@ -72,7 +74,7 @@ jucer_project_files("Synthesizer/Source"
   .         .         .         "Source/Oscillator.h"
 )
 
-jucer_project_files("Synthesizer/Source/Maximilian/libs"
+jucer_project_files("OSCSynthesizer/Source/Maximilian/libs"
 # Compile   Xcode     Binary    File
 #           Resource  Resource
   x         .         .         "../Libraries/Maximilian/libs/fft.cpp"
@@ -93,7 +95,7 @@ jucer_project_files("Synthesizer/Source/Maximilian/libs"
   .         .         .         "../Libraries/Maximilian/libs/sineTable.h"
 )
 
-jucer_project_files("Synthesizer/Source/Maximilian"
+jucer_project_files("OSCSynthesizer/Source/Maximilian"
 # Compile   Xcode     Binary    File
 #           Resource  Resource
   x         .         .         "../Libraries/Maximilian/main.cpp"
@@ -103,7 +105,7 @@ jucer_project_files("Synthesizer/Source/Maximilian"
   .         .         .         "../Libraries/Maximilian/stb_vorbis.h"
 )
 
-jucer_project_files("Synthesizer/Source"
+jucer_project_files("OSCSynthesizer/Source"
 # Compile   Xcode     Binary    File
 #           Resource  Resource
   .         .         .         "Source/SynthSound.h"

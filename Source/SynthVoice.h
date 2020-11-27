@@ -52,9 +52,9 @@ public:
     void startNote ( int midiNoteNumber, float velocity, juce::SynthesiserSound * sound, int currentPitch ) override {
         // when a key is hit on the keyboard, what's gonna happen
         env1.trigger = 1; // whether the env is triggered
+        note = midiNoteNumber;
         level = velocity;
         frequency = juce::MidiMessage::getMidiNoteInHertz(midiNoteNumber);
-        std::cout << midiNoteNumber << std::endl;
     }
 
     void stopNote ( float velocity, bool allowTailOff ) override {
@@ -62,12 +62,18 @@ public:
         env1.trigger = 0;
         allowTailOff = true;
 
-        if ( velocity == 0 )
+        if ( velocity == 0 ) {
             clearCurrentNote();
+            note = 0;
+        }
     }
 
     void pitchWheelMoved ( int newPitchWheelValue ) override {
-
+        cout << "frequency before " << frequency << std::endl;
+        frequency = pow(2, (newPitchWheelValue - 8192.0)/8192.0) * juce::MidiMessage::getMidiNoteInHertz(note);
+        cout << "pitch wheel value " << newPitchWheelValue << std::endl;
+        cout << "power " << (newPitchWheelValue - 8192.0)/8192.0 << std::endl;
+        cout << "new frequency " << frequency << std::endl;
     }
 
     void controllerMoved (int controllerNumber, int newControllerValue ) override {
@@ -76,7 +82,7 @@ public:
 
     void renderNextBlock ( juce::AudioBuffer<float> &outputBuffer, int startSample, int numSamples ) override {
 
-        for (int sample = 0; sample < numSamples; sample++) {
+        for (int sample = startSample; sample < numSamples; sample++) {
             double theSound = env1.adsr(setOscType(), env1.trigger) * level;
             double filterdSound = filter1.lores(theSound, 200, 0.1);
 //            cout << "theWave "<<theWave << std::endl;
@@ -84,8 +90,8 @@ public:
 
                 outputBuffer.addSample(channel, sample, filterdSound);
             }
-
             startSample++;
+
         }
 
 
@@ -95,6 +101,7 @@ private:
     double level;
     double frequency;
     int theWave;
+    int note;
 
     maxiOsc osc1;
     maxiEnv env1;

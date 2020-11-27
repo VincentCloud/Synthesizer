@@ -1055,9 +1055,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1076,13 +1076,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1090,7 +1090,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1123,7 +1123,7 @@
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
 				OTHER_LDFLAGS = "-bundle -lSynthesizer";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1178,9 +1178,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1199,13 +1199,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1213,7 +1213,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1245,7 +1245,7 @@
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
 				OTHER_LDFLAGS = "-bundle -lSynthesizer";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1300,9 +1300,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1321,13 +1321,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1335,7 +1335,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1369,7 +1369,7 @@
 				);
 				OTHER_LDFLAGS = "-bundle -lSynthesizer";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1424,9 +1424,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1445,13 +1445,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1459,7 +1459,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1492,7 +1492,7 @@
 				);
 				OTHER_LDFLAGS = "-bundle -lSynthesizer";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1545,9 +1545,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1566,13 +1566,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1580,7 +1580,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1610,7 +1610,7 @@
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
 				OTHER_LDFLAGS = "-lSynthesizer";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1662,9 +1662,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1683,13 +1683,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1697,7 +1697,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1726,7 +1726,7 @@
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
 				OTHER_LDFLAGS = "-lSynthesizer";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1778,9 +1778,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1799,13 +1799,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1813,7 +1813,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1842,7 +1842,7 @@
 					"/Users/vincenthuang/JUCEProjects/Synthesizer/Maximilian",
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
@@ -1895,9 +1895,9 @@
 					"JucePlugin_Enable_IAA=0",
 					"JucePlugin_Name=\\\"Synthesizer\\\"",
 					"JucePlugin_Desc=\\\"Synthesizer\\\"",
-					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_Manufacturer=\\\"MUMT306\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"chenzhun.huang@mail.mcgill.ca\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e6f6b72",
 					"JucePlugin_IsSynth=1",
@@ -1916,13 +1916,13 @@
 					"JucePlugin_AUExportPrefix=SynthesizerAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"SynthesizerAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_CFBundleIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_RTASCategory=2048",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.Synthesizer",
+					"JucePlugin_AAXIdentifier=com.MUMT306.Synthesizer",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=2048",
@@ -1930,7 +1930,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757269",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ Synthesizer\\\"",
+					"JucePlugin_IAAName=\\\"MUMT306:\\ Synthesizer\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1958,7 +1958,7 @@
 					"/Applications/JUCE/modules",
 					"/Applications/JUCE/modules/juce_audio_plugin_client",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Synthesizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MUMT306.Synthesizer;
 				PRODUCT_NAME = "Synthesizer";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
@@ -2346,7 +2346,7 @@
 		5FE49532A0B8F1AE97D99A3B = {
 			isa = PBXProject;
 			buildConfigurationList = 5A4823503218C1F1CB040942;
-			attributes = { LastUpgradeCheck = 1200; ORGANIZATIONNAME = ""; TargetAttributes = { 82D1B44F220375F2703B33B9 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };F99E227DABB427984FA4A903 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };6F2F0FE75767A999A9127985 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };CE54D4B73AF2A9ADE7AE3F07 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };48245960CCD9B57F52EA1360 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; }; }; };
+			attributes = { LastUpgradeCheck = 1200; ORGANIZATIONNAME = "MUMT306"; TargetAttributes = { 82D1B44F220375F2703B33B9 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };F99E227DABB427984FA4A903 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };6F2F0FE75767A999A9127985 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };CE54D4B73AF2A9ADE7AE3F07 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };48245960CCD9B57F52EA1360 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; }; }; };
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
 			mainGroup = 26E8128F8071B3D6235BA60A;
