@@ -14,8 +14,9 @@
 #include "SynthSound.h"
 #include "maximilian.h"
 
-class SynthVoice : public juce::SynthesiserVoice {
+class SynthVoice : public juce::SynthesiserVoice{
 public:
+
     bool canPlaySound ( juce::SynthesiserSound * sound) override {
         // return whether it can play a sound
         // use a dynamic cast

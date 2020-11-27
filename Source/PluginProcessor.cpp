@@ -23,6 +23,8 @@ SynthesizerAudioProcessor::SynthesizerAudioProcessor()
                        ), apvts(*this, nullptr, "Parameters", createParameters())
 #endif
 {
+    connect(8000);
+    OSCReceiver::addListener(this, "/adsr");
     /*
      * create 5 voices
      */
@@ -205,4 +207,30 @@ juce::AudioProcessorValueTreeState::ParameterLayout SynthesizerAudioProcessor::c
 
     params.push_back(std::make_unique<juce::AudioParameterFloat>("WAVETYPE", "WaveType", 0, 2, 0)); // the combox selection is 1-index, but the param is 0-index
     return { params.begin(), params.end() };
+}
+
+
+void SynthesizerAudioProcessor::oscMessageReceived(const OSCMessage& message) {
+    if (message.size() == 2 && message[0].isFloat32() && message[1].isString()) {
+        std::cout << "The message is " << message[0].getFloat32() << " " << message[1].getString() << std::endl;
+        if (message[1].isString() && message[1].getString() == "attack" && message[0].isFloat32() && message[0].getFloat32() < 5000.0f && message[0].getFloat32() > 0.1f) {
+            auto normalizedAttackTime = apvts.getParameterRange("ATTACK").convertTo0to1(message[0].getFloat32());
+            apvts.getParameter("ATTACK")->setValueNotifyingHost(normalizedAttackTime);
+        }
+
+        if (message[1].isString() && message[1].getString() == "decay" && message[0].isFloat32() && message[0].getFloat32() < 2000.0f && message[0].getFloat32() > 0.1f) {
+            auto normalizedDecayTime = apvts.getParameterRange("DECAY").convertTo0to1(message[0].getFloat32());
+            apvts.getParameter("DECAY")->setValueNotifyingHost(normalizedDecayTime);
+        }
+
+        if (message[1].isString() && message[1].getString() == "sustain" && message[0].isFloat32() && message[0].getFloat32() < 0.8f && message[0].getFloat32() > 0.1f) {
+            auto normalizedSustainTime = apvts.getParameterRange("SUSTAIN").convertTo0to1(message[0].getFloat32());
+            apvts.getParameter("SUSTAIN")->setValueNotifyingHost(normalizedSustainTime);
+        }
+
+        if (message[1].isString() && message[1].getString() == "release" && message[0].isFloat32() && message[0].getFloat32() < 5000.0f && message[0].getFloat32() > 0.1f) {
+            auto normalizedReleaseTime = apvts.getParameterRange("RELEASE").convertTo0to1(message[0].getFloat32());
+            apvts.getParameter("RELEASE")->setValueNotifyingHost(normalizedReleaseTime);
+        }
+    }
 }

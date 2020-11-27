@@ -15,7 +15,9 @@
 //==============================================================================
 /**
 */
-class SynthesizerAudioProcessor  : public juce::AudioProcessor
+class SynthesizerAudioProcessor  : public juce::AudioProcessor,
+        public OSCReceiver,
+        public OSCReceiver::ListenerWithOSCAddress<OSCReceiver::MessageLoopCallback>
 {
 public:
     //==============================================================================
@@ -54,6 +56,9 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+
+    void oscMessageReceived(const OSCMessage& message) override;
+
 
 
     float attackTime; // set it to pass the attack values to other components
