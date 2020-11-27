@@ -63,6 +63,13 @@ jucer_audio_plugin_settings(
   PLUGIN_VST_LEGACY_CATEGORY "kPlugCategSynth"
 )
 
+jucer_project_files("Synthesizer/Source"
+# Compile   Xcode     Binary    File
+#           Resource  Resource
+  x         .         .         "Source/Oscillator.cpp"
+  .         .         .         "Source/Oscillator.h"
+)
+
 jucer_project_files("Synthesizer/Source/Maximilian/libs"
 # Compile   Xcode     Binary    File
 #           Resource  Resource

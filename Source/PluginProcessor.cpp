@@ -150,6 +150,8 @@ void SynthesizerAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
         if (myVoice) {
             myVoice->getParam((float*)(apvts.getRawParameterValue("ATTACK")),
                               (float*)(apvts.getRawParameterValue("RELEASE")));
+
+            myVoice->getOscType((float *)apvts.getRawParameterValue("WAVETYPE"));
         }
     }
 
@@ -196,5 +198,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout SynthesizerAudioProcessor::c
     std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
     params.push_back(std::make_unique<juce::AudioParameterFloat>("ATTACK", "Attack", 0.1f, 5000.0f, 0.1f));
     params.push_back(std::make_unique<juce::AudioParameterFloat>("RELEASE", "Release", 0.1f, 5000.0f, 0.1f));
+
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("WAVETYPE", "WaveType", 0, 2, 0)); // the combox selection is 1-index, but the param is 0-index
     return { params.begin(), params.end() };
 }

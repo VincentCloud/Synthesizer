@@ -28,6 +28,24 @@ public:
         env1.setRelease(double(*release));
     }
 
+    void getOscType(float *selection) {
+        theWave = *selection;
+    }
+
+    double setOscType() {
+        if (theWave == 0) {
+            return osc1.sinewave(frequency);
+        }
+        if (theWave == 1) {
+            return osc1.saw(frequency);
+        }
+        if (theWave == 2) {
+            return osc1.square(frequency);
+        } else {
+            return osc1.sinewave(frequency);
+        }
+    }
+
     void startNote ( int midiNoteNumber, float velocity, juce::SynthesiserSound * sound, int currentPitch ) override {
         // when a key is hit on the keyboard, what's gonna happen
         env1.trigger = 1; // whether the env is triggered
@@ -58,8 +76,7 @@ public:
         env1.setSustain(0.8);
 
         for (int sample = 0; sample < numSamples; sample++) {
-            double theWave = osc1.saw(frequency);
-            double theSound = env1.adsr(theWave, env1.trigger) * level;
+            double theSound = env1.adsr(setOscType(), env1.trigger) * level;
             double filterdSound = filter1.lores(theSound, 200, 0.1);
 //            cout << "theWave "<<theWave << std::endl;
             for (int channel = 0; channel < outputBuffer.getNumChannels(); channel++) {
@@ -76,6 +93,7 @@ public:
 private:
     double level;
     double frequency;
+    int theWave;
 
     maxiOsc osc1;
     maxiEnv env1;

@@ -167,6 +167,10 @@ set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_a
 set_source_files_properties ("../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
+    "../../Source/Envelope.cpp"
+    "../../Source/Envelope.h"
+    "../../Source/Oscillator.cpp"
+    "../../Source/Oscillator.h"
     "../../../Libraries/Maximilian/libs/fft.cpp"
     "../../../Libraries/Maximilian/libs/fft.h"
     "../../../Libraries/Maximilian/libs/maxiAtoms.cpp"
@@ -1622,6 +1626,8 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
 
+set_source_files_properties ("../../Source/Envelope.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/Oscillator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/fft.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/maxiAtoms.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/maxiBark.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -4261,6 +4267,10 @@ set_source_files_properties ("../../../../JUCE/modules/juce_audio_plugin_client/
 set_source_files_properties ("../../../../JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
+    "../../Source/Envelope.cpp"
+    "../../Source/Envelope.h"
+    "../../Source/Oscillator.cpp"
+    "../../Source/Oscillator.h"
     "../../../Libraries/Maximilian/libs/fft.cpp"
     "../../../Libraries/Maximilian/libs/fft.h"
     "../../../Libraries/Maximilian/libs/maxiAtoms.cpp"
@@ -5715,6 +5725,8 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
 
+set_source_files_properties ("../../Source/Envelope.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/Oscillator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/fft.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/maxiAtoms.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../Libraries/Maximilian/libs/maxiBark.h" PROPERTIES HEADER_FILE_ONLY TRUE)

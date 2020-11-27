@@ -5,6 +5,10 @@
               pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn">
   <MAINGROUP id="tniGhz" name="Synthesizer">
     <GROUP id="{22CE6CC2-0D74-D55A-45E1-2303C47562B3}" name="Source">
+      <FILE id="mco7Uh" name="Envelope.cpp" compile="1" resource="0" file="Source/Envelope.cpp"/>
+      <FILE id="AWvzTS" name="Envelope.h" compile="0" resource="0" file="Source/Envelope.h"/>
+      <FILE id="scmy3K" name="Oscillator.cpp" compile="1" resource="0" file="Source/Oscillator.cpp"/>
+      <FILE id="Xh0FnT" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
       <GROUP id="{18B623E4-5D4D-621A-B8BC-E62E93FDE6D2}" name="Maximilian">
         <GROUP id="{05613E98-DED1-EE5A-1C37-A19D1E6E2515}" name="libs">
           <FILE id="U8HesZ" name="fft.cpp" compile="1" resource="0" file="../Libraries/Maximilian/libs/fft.cpp"/>

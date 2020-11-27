@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "Oscillator.h"
 
 //==============================================================================
 /**
@@ -30,10 +31,12 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     SynthesizerAudioProcessor& audioProcessor;
-    juce::Slider attackSlider;
-    juce::Slider releaseSlider;
-    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> attackSliderAttachment;
-    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> releaseSliderAttachment;
+    Oscillator oscGUI;
+
+//    juce::Slider attackSlider;
+//    juce::Slider releaseSlider;
+//    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> attackSliderAttachment;
+//    std::unique_ptr<AudioProcessorValueTreeState::SliderAttachment> releaseSliderAttachment;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SynthesizerAudioProcessorEditor)
 };

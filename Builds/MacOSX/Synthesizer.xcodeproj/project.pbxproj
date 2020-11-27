@@ -73,6 +73,14 @@
 			isa = PBXBuildFile;
 			fileRef = 9666194FB41C58A3B9C87D6A;
 		};
+		E4FB6C4AEC256EF45F425DE1 = {
+			isa = PBXBuildFile;
+			fileRef = A4F52C4D0DC2AE9E78F6606F;
+		};
+		B935C2C7B0BA5F1C673340B6 = {
+			isa = PBXBuildFile;
+			fileRef = A54391DBDA096AC6E81F76BC;
+		};
 		DA84A770FAC4436BC209B878 = {
 			isa = PBXBuildFile;
 			fileRef = 02FB626D846DA3CDD857C6D3;
@@ -228,20 +236,6 @@
 			path = ../../../Libraries/Maximilian/libs/maxiMFCC.h;
 			sourceTree = "SOURCE_ROOT";
 		};
-		F8104BA875951D41382FE00E = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.cfbundle;
-			includeInIndex = 0;
-			path = Synthesizer.vst3;
-			sourceTree = "BUILT_PRODUCTS_DIR";
-		};
-		10AE2CCCEC558246146B256A = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.cfbundle;
-			includeInIndex = 0;
-			path = Synthesizer.component;
-			sourceTree = "BUILT_PRODUCTS_DIR";
-		};
 		14B8445FB7B4FE0B9EDA6E8A = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
@@ -261,13 +255,6 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = maxiGrains.h;
 			path = ../../../Libraries/Maximilian/libs/maxiGrains.h;
-			sourceTree = "SOURCE_ROOT";
-		};
-		268AEEEF635A8EE49738B2D5 = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
-			name = "Info-AU.plist";
-			path = "Info-AU.plist";
 			sourceTree = "SOURCE_ROOT";
 		};
 		29B8F7933BD11EC943694A74 = {
@@ -291,6 +278,34 @@
 			path = "../../JuceLibraryCode/include_juce_audio_devices.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		3957904E9CF89037C80EBD13 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "stb_vorbis.c";
+			path = "../../../Libraries/Maximilian/stb_vorbis.c";
+			sourceTree = "SOURCE_ROOT";
+		};
+		F8104BA875951D41382FE00E = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = Synthesizer.vst3;
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		10AE2CCCEC558246146B256A = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = Synthesizer.component;
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		268AEEEF635A8EE49738B2D5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "Info-AU.plist";
+			path = "Info-AU.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
 		362368ADF5AC2C4F5377A246 = {
 			isa = PBXFileReference;
 			lastKnownFileType = text.plist.xml;
@@ -305,18 +320,25 @@
 			path = "../../JuceLibraryCode/include_juce_events.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		3957904E9CF89037C80EBD13 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.c;
-			name = "stb_vorbis.c";
-			path = "../../../Libraries/Maximilian/stb_vorbis.c";
-			sourceTree = "SOURCE_ROOT";
-		};
 		39947A86770314EE08D230C8 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = "include_juce_audio_plugin_client_VST3.cpp";
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		3C558ED383967209644EFAF6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Envelope.h;
+			path = ../../Source/Envelope.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3E97602D709D44ECAA728CC5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Oscillator.h;
+			path = ../../Source/Oscillator.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		3FF36C320A75141CE600ED41 = {
@@ -506,6 +528,20 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = maxiAtoms.h;
 			path = ../../../Libraries/Maximilian/libs/maxiAtoms.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A4F52C4D0DC2AE9E78F6606F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Envelope.cpp;
+			path = ../../Source/Envelope.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A54391DBDA096AC6E81F76BC = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Oscillator.cpp;
+			path = ../../Source/Oscillator.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		A8CF7941D90C7AB0AC0EBC7F = {
@@ -785,6 +821,10 @@
 		AFFCF38A693D04C3E09FB527 = {
 			isa = PBXGroup;
 			children = (
+				A4F52C4D0DC2AE9E78F6606F,
+				3C558ED383967209644EFAF6,
+				A54391DBDA096AC6E81F76BC,
+				3E97602D709D44ECAA728CC5,
 				10300C7BA4882BA7BBD392F2,
 				FBBA94AB9201C70593DEA577,
 				A8CF7941D90C7AB0AC0EBC7F,
@@ -2231,6 +2271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FB6C4AEC256EF45F425DE1,
+				B935C2C7B0BA5F1C673340B6,
 				DA84A770FAC4436BC209B878,
 				58D691D46AA047EAA52175D2,
 				1268C317AD4E61661DAF9B16,
