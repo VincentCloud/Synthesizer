@@ -20,7 +20,7 @@ The binaries for this project can be found here [https://github.com/VincentCloud
 
 The overall structure of this project is similar to a typical JUCE project, where different parts of the application are divided into hierarchical components. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b8f6076-5414-449a-b342-c8aeac71d5d7/Screen_Shot_2020-11-27_at_11.21.07_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b8f6076-5414-449a-b342-c8aeac71d5d7/Screen_Shot_2020-11-27_at_11.21.07_PM.png)
+![https://github.com/VincentCloud/Synthesizer/blob/master/architecture.png](https://github.com/VincentCloud/Synthesizer/blob/master/architecture.png)
 
 A rough architecture diagram on the structure of the synthesizer
 
