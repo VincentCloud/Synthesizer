@@ -69,11 +69,11 @@ public:
     }
 
     void pitchWheelMoved ( int newPitchWheelValue ) override {
-        cout << "frequency before " << frequency << std::endl;
+//        cout << "frequency before " << frequency << std::endl;
         frequency = pow(2, (newPitchWheelValue - 8192.0)/8192.0) * juce::MidiMessage::getMidiNoteInHertz(note);
-        cout << "pitch wheel value " << newPitchWheelValue << std::endl;
-        cout << "power " << (newPitchWheelValue - 8192.0)/8192.0 << std::endl;
-        cout << "new frequency " << frequency << std::endl;
+//        cout << "pitch wheel value " << newPitchWheelValue << std::endl;
+//        cout << "power " << (newPitchWheelValue - 8192.0)/8192.0 << std::endl;
+//        cout << "new frequency " << frequency << std::endl;
     }
 
     void controllerMoved (int controllerNumber, int newControllerValue ) override {
