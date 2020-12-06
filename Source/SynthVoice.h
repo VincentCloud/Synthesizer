@@ -35,7 +35,7 @@ public:
         theWave = *selection;
     }
 
-    double setOscType() {
+    double setOscType(double frequency) {
         if (theWave == 0) {
             return osc1.sinewave(frequency);
         }
@@ -54,6 +54,9 @@ public:
         env1.trigger = 1; // whether the env is triggered
         note = midiNoteNumber;
         level = velocity;
+        if (juce::MidiMessage::getMidiNoteInHertz(midiNoteNumber) != frequency) {
+            frequency_changed = true;
+        }
         frequency = juce::MidiMessage::getMidiNoteInHertz(midiNoteNumber);
     }
 
@@ -70,10 +73,11 @@ public:
 
     void pitchWheelMoved ( int newPitchWheelValue ) override {
 //        cout << "frequency before " << frequency << std::endl;
+        frequency_changed = true;
         frequency = pow(2, (newPitchWheelValue - 8192.0)/8192.0) * juce::MidiMessage::getMidiNoteInHertz(note);
-//        cout << "pitch wheel value " << newPitchWheelValue << std::endl;
+        cout << "pitch wheel value " << newPitchWheelValue << std::endl;
 //        cout << "power " << (newPitchWheelValue - 8192.0)/8192.0 << std::endl;
-//        cout << "new frequency " << frequency << std::endl;
+        cout << "new frequency " << frequency << std::endl;
     }
 
     void controllerMoved (int controllerNumber, int newControllerValue ) override {
@@ -81,18 +85,26 @@ public:
     }
 
     void renderNextBlock ( juce::AudioBuffer<float> &outputBuffer, int startSample, int numSamples ) override {
-
+        double frequency_copy = frequency;
+        double curr_level = 0;
         for (int sample = startSample; sample < numSamples; sample++) {
-            double theSound = env1.adsr(setOscType(), env1.trigger) * level;
+            if (frequency_changed) {
+                curr_level += level / numSamples;
+            } else {
+                curr_level = level;
+            }
+            double theSound = env1.adsr(setOscType(frequency_copy), env1.trigger) * curr_level;
             double filterdSound = filter1.lores(theSound, 200, 0.1);
 //            cout << "theWave "<<theWave << std::endl;
             for (int channel = 0; channel < outputBuffer.getNumChannels(); channel++) {
 
                 outputBuffer.addSample(channel, sample, filterdSound);
             }
-            startSample++;
+//            startSample++;
 
         }
+
+        frequency_changed = false;
 
 
     }
@@ -102,6 +114,7 @@ private:
     double frequency;
     int theWave;
     int note;
+    bool frequency_changed;
 
     maxiOsc osc1;
     maxiEnv env1;
